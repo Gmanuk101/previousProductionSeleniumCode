@@ -35,7 +35,7 @@ public class Verify_Login_Logout_Test extends Browser_Choices_BaseClass
 
         //need to add the assertion that userIsOn the main home screen
         String homePage = driver.getCurrentUrl();
-        Assert.assertEquals( "http://10.10.1.13/vpeople/index.php/Person/",homePage );
+        Assert.assertEquals( "http:////OBFUSTICATED/index.php/Person/",homePage );
 
     }
 
@@ -44,7 +44,7 @@ public class Verify_Login_Logout_Test extends Browser_Choices_BaseClass
     {
         login.clickLogOutButton();
         String logoutPage = driver.getCurrentUrl();
-        Assert.assertEquals( "http://10.10.1.13/vpeople/index.php/Login/logout",logoutPage );
+        Assert.assertEquals( "OBFUSTICATED",logoutPage );
     }
 
 

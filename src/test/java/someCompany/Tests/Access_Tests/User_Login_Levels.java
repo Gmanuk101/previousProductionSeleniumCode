@@ -19,9 +19,9 @@ public class User_Login_Levels extends Browser_Choices_BaseClass
 
     public void gotoLoginPageAsSystemAdmin()
     {
-        server.inputTestServerUrl(server.inputTestServerUrl("http://10.10.1.13/vpeople/" ));
+        server.inputTestServerUrl(server.inputTestServerUrl("///////////" ));
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        login.loginToVPeople( "master", "tommywiseausmetalgearhogwarts" );
+        login.loginToVPeople( "master", "///////////" );
         login.clickOnLoginButton();
     }
 
